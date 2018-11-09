@@ -12,3 +12,7 @@ var degres = ["10°C", "30°C", "-50°C", "5°C" , "69°C", "18°C", "30°C", "4
 var lieux = ["Floyon", "Wignehies", "Barcelona", "Paris", "Tokyo", "Reykjavik", "Mons", "Le Touquet", "Trélon", "Fourmies", "Palais de l'Elysée",
     "Mairie de Paris", "Mac Do", "Buger King", "Chuttes du Niagara", "Hidepark", "Paris", "Montcuq", "Mac Do", "KFC", "Big Ben", "Mt Fuji",
     "Bondy", "Rio de Janeiro"];
+
+var verbes = ["Coder", "Copier", "Nager", "Monter", "Developper", "Jouer", "Voter", "Arnaquer", "Jouer", "Manger", "Accomplir", "Communiquer", "Coder"
+, "Coordonner", "Avoir", "Aimer", "être passionné", "Soulever", "Evoluer", "Jouer", "Manger", "S'envoyer", "Enfourner"];
+

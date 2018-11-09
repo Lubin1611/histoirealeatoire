@@ -13,18 +13,12 @@ var lieux = ["Floyon", "Wignehies", "Barcelona", "Paris", "Tokyo", "Reykjavik", 
     "Mairie de Paris", "Mac Do", "Buger King", "Chuttes du Niagara", "Hidepark", "Paris", "Montcuq", "Mac Do", "KFC", "Big Ben", "Mt Fuji",
     "Bondy", "Rio de Janeiro"];
 
-var verbes = ["coder", "copier", "nager", "monter", "developper", "jouer", "voter", "arnaquer", "jouer", "manger", "accomplir", "communiquer", "coder"
-, "coordonner", "avoir", "aimer", "être passionné", "soulever", "évoluer", "jouer", "manger", "s'envoyer", "enfourner"];
+var verbes = ["coder", "copier", "nager", "monter", "developper", "jouer", "voter", "arnaquer", "jouer", "manger", "accomplir quelque chose", "communiquer", "coder"
+, "coordonner", "avoir", "aimer", "être passionné par", "soulever", "évoluer", "jouer", "manger", "s'envoyer", "s'enfourner"];
 
 
 
 
-    var randNoms = noms[Math.floor(Math.random() * noms.length)];
-    var randNoms2 = noms[Math.floor(Math.random() * noms.length)];
-    var randObjets = objets[Math.floor(Math.random() * objets.length)];
-    var randDegres = degres[Math.floor(Math.random() * degres.length)];
-    var randLieux = lieux[Math.floor(Math.random() * lieux.length)];
-    var randVerbes = verbes[Math.floor(Math.random() * verbes.length)];
 
 
 document.getElementById("grosBouton").addEventListener("click", function () {
@@ -37,7 +31,9 @@ document.getElementById("grosBouton").addEventListener("click", function () {
     lieux.push(newLieu);
     verbes.push(newVerbe);
 
-    console.log(objets, lieux, verbes);
+    console.log(objets);
+    console.log(lieux);
+
 
 });
 
@@ -45,19 +41,27 @@ document.getElementById("grosBouton").addEventListener("click", function () {
 
 document.getElementById('button').addEventListener('click', function () {
 
+    var randNoms = noms[Math.floor(Math.random() * noms.length)];
+    var randNoms2 = noms[Math.floor(Math.random() * noms.length)];
+    var randObjets = objets[Math.floor(Math.random() * objets.length)];
+    var randDegres = degres[Math.floor(Math.random() * degres.length)];
+    var randLieux = lieux[Math.floor(Math.random() * lieux.length)];
+    var randVerbes = verbes[Math.floor(Math.random() * verbes.length)];
 
-    var aleatoire = Math.floor(Math.random()*10);
+
+
+    var aleatoire = Math.floor(Math.random() * 10);
     var utilisateur = document.getElementById('prenom').value;
+    var histoire = document.getElementById('histoire');
 
-    if (aleatoire < 5)
-    {
-        document.getElementById("histoire").innerHTML = "Ce matin à "+ randLieux+ ", il faisait "+ randDegres + " quand "+ utilisateur +" était en train de "+ randVerbes + " avec " + randNoms2 + " en utilisant son/sa "+ randObjets;
-
-    }
-    if (aleatoire > 5)
-    {
-        document.getElementById("histoire").innerHTML = "Ce matin à "+ randLieux+ ", il faisait "+ randDegres + " quand "+ randNoms +" était en train de "+ randVerbes + " avec " + randNoms2 + " en utilisant son/sa "+ randObjets;
+    if (aleatoire < 5) {
+        histoire.innerHTML += "Ce matin à " + randLieux + ", il faisait " + randDegres + " quand " + utilisateur + " était en train de " + randVerbes + " avec " + randNoms2 + " en utilisant son/sa " + randObjets + " <br/></br>";
 
     }
+    if (aleatoire > 5) {
+        histoire.innerHTML += "Ce matin à " + randLieux + ", il faisait " + randDegres + " quand " + randNoms + " était en train de " + randVerbes + " avec " + randNoms2 + " en utilisant son/sa " + randObjets + " <br/></br>";
+
+    }
+
 });
 

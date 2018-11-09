@@ -45,6 +45,7 @@ document.getElementById("grosBouton").addEventListener("click", function () {
 
 document.getElementById('button').addEventListener('click', function () {
 
+
     var aleatoire = Math.floor(Math.random()*10);
     var utilisateur = document.getElementById('prenom').value;
 

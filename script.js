@@ -27,6 +27,19 @@ var verbes = ["coder", "copier", "nager", "monter", "developper", "jouer", "vote
     var randVerbes = verbes[Math.floor(Math.random() * verbes.length)];
 
 
+document.getElementById("grosBouton").addEventListener("click", function () {
+
+    var newObjet = document.getElementById("objet").value;
+    var newLieu = document.getElementById("lieu").value;
+    var newVerbe = document.getElementById("verbe").value;
+
+    objets.push(newObjet);
+    lieux.push(newLieu);
+    verbes.push(newVerbe);
+
+    console.log(objets, lieux, verbes);
+
+});
 
 
 
@@ -47,16 +60,3 @@ document.getElementById('button').addEventListener('click', function () {
     }
 });
 
-document.getElementById("grosBouton").addEventListener("click", function () {
-
-    var newObjet = document.getElementById("objet").value;
-    var newLieu = document.getElementById("lieu").value;
-    var newVerbe = document.getElementById("verbe").value;
-
-    objets.push(newObjet);
-    lieux.push(newLieu);
-    verbes.push(newVerbe);
-
-   console.log(objets, lieux, verbes);
-
-});

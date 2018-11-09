@@ -20,10 +20,11 @@ var verbes = ["coder", "copier", "nager", "monter", "developper", "jouer", "vote
 
 
     var randNoms = noms[Math.floor(Math.random() * noms.length)];
+    var randNoms2 = noms[Math.floor(Math.random() * noms.length)];
     var randObjets = objets[Math.floor(Math.random() * objets.length)];
     var randDegres = degres[Math.floor(Math.random() * degres.length)];
     var randLieux = lieux[Math.floor(Math.random() * lieux.length)];
     var randVerbes = verbes[Math.floor(Math.random() * verbes.length)];
 
 
-document.getElementById("histoire").innerHTML = "Ce matin à "+ randLieux+ ", il faisait "+ randDegres + " quand "+ randNoms +" était en train de "+ randVerbes + " avec son/sa "+ randObjets;
+document.getElementById("histoire").innerHTML = "Ce matin à "+ randLieux+ ", il faisait "+ randDegres + " quand "+ randNoms +" était en train de "+ randVerbes + " avec " + randNoms2 + " en utilisant son/sa "+ randObjets;

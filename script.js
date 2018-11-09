@@ -13,8 +13,8 @@ var lieux = ["Floyon", "Wignehies", "Barcelona", "Paris", "Tokyo", "Reykjavik", 
     "Mairie de Paris", "Mac Do", "Buger King", "Chuttes du Niagara", "Hidepark", "Paris", "Montcuq", "Mac Do", "KFC", "Big Ben", "Mt Fuji",
     "Bondy", "Rio de Janeiro"];
 
-var verbes = ["Coder", "Copier", "Nager", "Monter", "Developper", "Jouer", "Voter", "Arnaquer", "Jouer", "Manger", "Accomplir", "Communiquer", "Coder"
-, "Coordonner", "Avoir", "Aimer", "être passionné", "Soulever", "Evoluer", "Jouer", "Manger", "S'envoyer", "Enfourner"];
+var verbes = ["coder", "copier", "nager", "monter", "developper", "jouer", "voter", "arnaquer", "jouer", "manger", "accomplir", "communiquer", "coder"
+, "coordonner", "avoir", "aimer", "être passionné", "soulever", "évoluer", "jouer", "manger", "s'envoyer", "enfourner"];
 
 
 
@@ -26,3 +26,4 @@ var verbes = ["Coder", "Copier", "Nager", "Monter", "Developper", "Jouer", "Vote
     var randVerbes = verbes[Math.floor(Math.random() * verbes.length)];
 
 
+document.getElementById("histoire").innerHTML = "Ce matin à "+ randLieux+ ", il faisait "+ randDegres + " quand "+ randNoms +" était en train de "+ randVerbes + " avec son/sa "+ randObjets;

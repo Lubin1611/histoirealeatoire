@@ -34,6 +34,8 @@ document.getElementById('button').addEventListener('click', function () {
 
     var utilisateur = document.getElementById('prenom').value;
     var aleatoire = Math.floor(Math.random()*10);
+    var utilisateur = document.getElementById('prenom').value;
+
     if (aleatoire < 5)
     {
         document.getElementById("histoire").innerHTML = "Ce matin à "+ randLieux+ ", il faisait "+ randDegres + " quand "+ utilisateur +" était en train de "+ randVerbes + " avec " + randNoms2 + " en utilisant son/sa "+ randObjets;
@@ -44,4 +46,18 @@ document.getElementById('button').addEventListener('click', function () {
         document.getElementById("histoire").innerHTML = "Ce matin à "+ randLieux+ ", il faisait "+ randDegres + " quand "+ randNoms +" était en train de "+ randVerbes + " avec " + randNoms2 + " en utilisant son/sa "+ randObjets;
 
     }
+});
+
+document.getElementById("grosBouton").addEventListener("click", function () {
+
+    var newObjet = document.getElementById("objet").value;
+    var newLieu = document.getElementById("lieu").value;
+    var newVerbe = document.getElementById("verbe").value;
+
+    objets.push(newObjet);
+    lieux.push(newLieu);
+    verbes.push(newVerbe);
+
+   console.log(objets, lieux, verbes);
+
 });

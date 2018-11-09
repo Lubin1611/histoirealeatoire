@@ -27,4 +27,20 @@ var verbes = ["coder", "copier", "nager", "monter", "developper", "jouer", "vote
     var randVerbes = verbes[Math.floor(Math.random() * verbes.length)];
 
 
-document.getElementById("histoire").innerHTML = "Ce matin à "+ randLieux+ ", il faisait "+ randDegres + " quand "+ randNoms +" était en train de "+ randVerbes + " avec " + randNoms2 + " en utilisant son/sa "+ randObjets;
+
+var utilisateur = document.getElementById('prenom').value;
+
+document.getElementById('button').addEventListener('click', function () {
+
+    var aleatoire = Math.floor(Math.random()*10);
+    if (aleatoire < 5)
+    {
+        document.getElementById("histoire").innerHTML = "Ce matin à "+ randLieux+ ", il faisait "+ randDegres + " quand "+ utilisateur +" était en train de "+ randVerbes + " avec " + randNoms2 + " en utilisant son/sa "+ randObjets;
+
+    }
+    if (aleatoire > 5)
+    {
+        document.getElementById("histoire").innerHTML = "Ce matin à "+ randLieux+ ", il faisait "+ randDegres + " quand "+ randNoms +" était en train de "+ randVerbes + " avec " + randNoms2 + " en utilisant son/sa "+ randObjets;
+
+    }
+});

@@ -6,3 +6,5 @@ var noms = ["Michel Varuk", "Jim Carrey", "Emma Watson", "Renaud", "Jacques", "B
 var objets = ["ordinateur", "téléphone", "ordinateur", "dé à coudre", "clavier", "tasse", "marteau", "pièce", "manette", "clavier", "ordinateur", "vélo",
     "avion", "miche de pain", "fourchette", "tasse", "pièces jaunes", "lunettes de soleil", "décapsuleur", "ballon de foot", "téléphone portable", "montre"];
 
+var degres = ["10°C", "30°C", "-50°C", "5°C" , "69°C", "18°C", "30°C", "40°C", "69°C", "70°C", "5°C", "28°C", "28°C", "24°C"
+, "37°C", "25°C", "12°C", "25°C", "100°C", "22°C", "37,2°C", "100°F", "30°C", "-5°C"];

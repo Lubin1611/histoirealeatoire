@@ -1,0 +1,29 @@
+h1 {
+    text-align : center;
+    background : aliceblue;
+    color : black;
+    padding : 10px;
+    text-shadow: black 1px 1px 1px;
+    border-radius : 5px;
+    margin-bottom : 50px;
+}
+body {
+    background: darkslateblue;
+    color : white;
+    font-family : Verdana, sans-serif;
+}
+#global {
+    margin-left : 15%;
+    margin-right : 15%;
+    padding : 15px;
+    height: 700px;
+    background: cornflowerblue;
+    border-radius : 5px;
+}
+#histoire {
+    border : solid white 1px;
+    text-align : center;
+    padding : 10px;
+    margin-top : 50px;
+    border-radius : 5px;
+}

@@ -28,10 +28,11 @@ var verbes = ["coder", "copier", "nager", "monter", "developper", "jouer", "vote
 
 
 
-var utilisateur = document.getElementById('prenom').value;
+
 
 document.getElementById('button').addEventListener('click', function () {
 
+    var utilisateur = document.getElementById('prenom').value;
     var aleatoire = Math.floor(Math.random()*10);
     if (aleatoire < 5)
     {
